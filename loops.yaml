@@ -11,3 +11,7 @@
     - {name: 'mysql', state: 'absent'}
     - {name: 'postfix', state: 'absent'}
     - {name: 'nginx', state: 'present'}
+
+
+ansible-playbook -i hosts loops.yaml --syntax-check
+ansible-playbook -i hosts loops.yaml -vvv
